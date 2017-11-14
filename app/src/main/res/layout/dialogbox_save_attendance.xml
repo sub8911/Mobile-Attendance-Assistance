@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/background_light"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_headingLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_DateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_DateView"
+        android:layout_alignBottom="@+id/tv_DateView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="25dp"
+        android:background="#b1cdf2"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="100dp"
+        android:paddingTop="5dp"
+        android:text="@string/date" />
+
+    <TextView
+        android:id="@+id/tv_DateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_headingLabel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_DateLabel"
+        android:padding="5dp"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/tv_studentPresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_DateLabel"
+        android:layout_below="@+id/tv_lectures"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/tv_DateView"
+        android:background="#b1cdf2"
+        android:padding="5dp"
+        android:text="Student Absent" />
+
+    <TextView
+        android:id="@+id/tv_lectures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_DateLabel"
+        android:layout_below="@+id/tv_DateLabel"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/tv_DateView"
+        android:background="#b1cdf2"
+        android:padding="5dp"
+        android:text="Lectures Held" />
+
+    <TextView
+        android:id="@+id/tv_numPresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_DateView"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_lectures"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_studentPresent"
+        android:padding="5dp"
+        android:text="Student Absent" />
+
+    <Spinner
+        android:id="@+id/sp_lectures"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/tv_lectures"
+        android:layout_alignBottom="@+id/tv_lectures"
+        android:layout_alignStart="@+id/tv_DateView"
+        android:entries="@array/lectures"
+        android:padding="3dp"
+        android:prompt="@string/lecture" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_numPresent"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!--<Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cancel"
+            />
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/save"
+           />-->
+    </LinearLayout>
+
+
+</RelativeLayout>

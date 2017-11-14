@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e4e3e3"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.sub.studentinfosys.mobile_attendance_assistance.UI.Add_Classes_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4e3e3"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fr_et_classname"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:text="Class Name" />
+
+        <com.sub.studentinfosys.mobile_attendance_assistance.UI.MyEdittext
+            android:id="@+id/fr_et_classname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@color/WHITE"
+            android:hint="@string/enter_class_name_here"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusDown="@+id/fr_btn_addExcel"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:background="@color/TRANSFERENT"
+            android:text="@string/add_student_list_through_excel_data_file"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/normal_text_size"
+            tools:gravity="center_horizontal|center_vertical" />
+
+        <com.sub.studentinfosys.mobile_attendance_assistance.UI.MyButton
+            android:id="@+id/fr_btn_addExcel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:nextFocusDown="@+id/fr_btn_addclass"
+            android:text="@string/click_to_select_excel_file"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/fr_lb_fileName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="4"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12dp"
+            tools:gravity="center_horizontal|center_vertical" />
+
+        <com.sub.studentinfosys.mobile_attendance_assistance.UI.MyButton
+            android:id="@+id/fr_btn_add_later"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:nextFocusDown="@+id/fr_btn_addclass"
+            android:text="Add List later"
+            android:textSize="16dp" />
+
+
+        <!--<com.sub.studentinfosys.mobile_attendance_assistance.UI.MyButton
+        android:id="@+id/fr_btn_GExcel"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:nextFocusDown="@+id/fr_btn_addclass"
+        android:text="Google SpreadSheet"
+        android:textSize="16dp"
+        android:layout_alignBaseline="@+id/fr_btn_addExcel"
+        android:layout_toEndOf="@+id/fr_btn_addExcel"
+        />-->
+    </LinearLayout>
+</LinearLayout>

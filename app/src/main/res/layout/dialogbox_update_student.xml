@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+             />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/thirty_dp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:paddingTop="@dimen/ten_dp">
+
+        <TextView
+            android:id="@+id/stud_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/stud_name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/ten_dp"
+            android:text="Edit Details"
+            android:textSize="@dimen/twenty_sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/stud_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/stud_roll"
+            android:background="@color/WHITE"
+            android:hint="name"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/stud_roll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stud_heading"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/stud_ll_roll"
+            android:background="@color/WHITE"
+            android:hint="roll"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/stud_ll_roll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stud_roll"
+            android:layout_alignBottom="@+id/stud_roll"
+            android:layout_toStartOf="@+id/stud_heading"
+            android:text="Roll Number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stud_name"
+            android:layout_alignBottom="@+id/stud_name"
+            android:layout_alignStart="@+id/stud_ll_roll"
+            android:layout_toStartOf="@+id/stud_name"
+            android:text="Name" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    app:layoutManager="LinearLayoutManager"
+    tools:context="com.sub.studentinfosys.mobile_attendance_assistance.UI.ClassAndSubject_Fragment"
+    tools:listitem="@layout/fragment_classes_subject"
+    tools:showIn="Add Classes" />
+
+
+
+

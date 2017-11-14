@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/WHITE" android:state_pressed="false" android:state_selected="false"
+
+        />
+
+    <item android:bottom="2dp" android:drawable="@drawable/bg_list_hover" android:left="1dp" android:right="1dp" android:state_pressed="true" />
+
+    <item android:bottom="2dp" android:drawable="@drawable/bg_list" android:left="1dp" android:right="1dp" android:state_pressed="false" android:state_selected="true" />
+</selector>
